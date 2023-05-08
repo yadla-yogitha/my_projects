@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>flask mini project</title>
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body >
+    <div id ="main-section"> 
+        <br>
+    <h1 style="color:white" >SCORE CALCULATION</h1>
+    <form action="/calculate" method="post">
+        <table style="size:300px">
+            <tr>
+                <th style="color:white">Subject</th>
+                <th style="color:white">Mark</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="subject" placeholder="Enter the subject name" value="none" ></td>
+                <td><input type="number" min="0" max="100" value="0" name="mark"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="subject"placeholder="Enter the subject name" value="none"></td>
+                <td><input type="number" min="0" max="100" value="0"  name="mark"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="subject" placeholder="Enter the subject name" value="none"></td>
+                <td><input type="number" min="0" max="100" value="0" name="mark"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="subject" placeholder="Enter the subject name" value="none"></td>
+                <td><input type="number" min="0" max="100" value="0" name="mark"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="subject" placeholder="Enter the subject name" value="none"></td>
+                <td><input type="number" min="0" max="100" value="0"  name="mark"></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Calculate Average">
+    </form>
+</div>
+</body>
+</html>

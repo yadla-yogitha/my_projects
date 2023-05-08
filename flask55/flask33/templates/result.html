@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet"  type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="main-section">
+        
+        <h1> Result </h1>
+        <table border="2">
+            <tr>
+                <th>Subject</th>
+                <th>Mark</th>
+            </tr>
+            {% for subject, mark in zip(subjects, marks) %}
+            <tr>
+                <td>{{ subject }}</td>
+                <td>{{ mark }}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td><strong>Average Mark:</strong></td>
+                <td>{{ avg_mark }}</td>
+            
+        </table>
+    {% if avg_mark > 50 %}
+        <p> <h1>he/she passed with a score {{ avg_mark }}</h1></p>
+    {% else %}
+        <p><h1>he/she failed with a score {{ avg_mark }}</h1></p>
+    {% endif %}
+</div>
+
+</body>
+</html>

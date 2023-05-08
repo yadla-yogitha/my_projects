@@ -1,0 +1,51 @@
+body{
+    height: 100vh;
+    background-image: url("a.jpg");
+    
+    background-position: -1844px 1160px;
+    text-align: center;
+    color:#fff
+     }
+     table {
+        
+        margin: 0 auto;
+        border: 3px solid #fff;
+        border-collapse: collapse;
+        font-size:30px;
+    }
+     th {
+        padding: 1px;
+        border: 1px solid #fff;
+        font-size:40px;
+    }
+    td{ padding: 15px;
+        border: 1px solid #fff;
+
+    }
+
+#main-section{
+    background-image:url("a.jpg"); 
+    background-size:cover;
+    height:100vh; 
+    width:100%;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+input[name='subject']{
+    padding: 10px;
+}
+
+input[name='mark']{
+    padding: 10px;
+}
+input[type='submit']{
+    
+    background-color:blue;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
