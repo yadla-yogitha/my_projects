@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px; 
+    background-color: rgb(100, 191, 237);
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    margin-top: 30px;
+}
+/* Styles for upload-excel.html template */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+input[type="file"] {
+    margin-bottom: 20px;
+}
+input[type="submit"] {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #ff8800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+/* Styles for view-data.html template */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    background-color: aqua;
+}
+
+img {
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+}

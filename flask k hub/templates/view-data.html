@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Data</title>
+</head>
+<body>
+    <h1>Uploaded Data</h1>
+    <!-- Display the table -->
+    {% if table %}
+        {{ table|safe }}
+    {% endif %}
+
+    <!-- Display the bar plot -->
+    {% if bar_plot_base64 %}
+        <h2>Bar Plot</h2>
+        <img src="data:image/png;base64, {{ bar_plot_base64 }}" width="600" height="400">
+    {% endif %}
+
+    <!-- Display the pie charts -->
+    {% if pie_charts %}
+        <h2>Pie Charts</h2>
+        {% for column, pie_plot_base64 in pie_charts %}
+            <h3>{{ column }}</h3>
+            <img src="data:image/png;base64, {{ pie_plot_base64 }}" width="400" height="400">
+        {% endfor %}
+    {% endif %}
+<div id="main-section">
+</body>
+</html>
