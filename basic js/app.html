@@ -1,0 +1,51 @@
+
+<html >
+<head>
+  <title>Form with JavaScript Validations</title>
+  <style>
+    body {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+  
+    }
+
+  </style>
+</head>
+<body>
+  <h2>Form with JavaScript</h2>
+  <form id="myForm">
+    <label for="name">Name:</label>/
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    const form = document.getElementById('myForm');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
+    form.addEventListener('submit', (event) => {
+  if (!nameInput.value || !emailInput.value || !passwordInput.value) {
+    event.preventDefault();
+    alert('Please fill in all the required fields.');
+  } else {
+    alert('Form submitted successfully!');
+  }
+}); 
+
+  </script>
+  </body>
+  </html>
