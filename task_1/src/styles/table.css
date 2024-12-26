@@ -1,0 +1,41 @@
+.table-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.table-data {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 2rem; /* Adjust padding based on your design */
+}
+
+.table-data h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.table-data h2 span{
+    color: #ed563b;
+}
+
+.exercise-table {
+    width: 100%;
+    max-width: 800px; /* Adjust max-width based on your design */
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.exercise-table th,
+.exercise-table td {
+    padding: 1rem;
+    border: 1px solid #fff;
+}
+
+@media screen and (max-width: 530px){
+    .table-wrapper{
+        overflow-x: auto;
+    }
+}
